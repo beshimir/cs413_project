@@ -48,10 +48,24 @@ function App() {
 					</div>
 				</div>
 
-			</section>
-
-      <section className="recommendations">
-
+      <dir className="recommendations flex flex-row lg:flex-col flex-wrap lg:flex-nowrap justify-between px-20">
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+          recommendation
+        </div>  
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+          recommendation
+        </div>
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+          recommendation
+        </div>
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+          recommendation
+        </div>
+      </dir>        
+        
+    
+        
+       
       </section>
 		</>
   );
