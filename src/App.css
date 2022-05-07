@@ -4,41 +4,44 @@
 
 @tailwind utilities;
 
-.App {
-  text-align: center;
+
+/* set --debug var to 1 to show
+thin border around elements
+for layout debugging
+
+otherwise set to 0 when ready 
+for styling or done debugging */
+
+* {
+	--debug: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title,
+.post,
+.ads,
+.like {
+	background-color: rgb(233, 239, 248);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	background-color: rgb(31, 94, 189);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ads-height {
+	height: auto;
+}
+.posts {
+	max-width: 650px;
+}
+.post-height {
+	height: 250px;
+}
+.post-width {
+	max-width: 400px;
+}
+.like-height {
+	height: 60px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
