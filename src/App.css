@@ -13,8 +13,11 @@ otherwise set to 0 when ready
 for styling or done debugging */
 
 * {
-	--debug: 1;
+	--debug: 0;
+	
 }
+
+
 
 .title,
 .post,
@@ -25,13 +28,14 @@ for styling or done debugging */
 
 body {
 	background-color: rgb(31, 94, 189);
+	
 }
 
 .ads-height {
 	height: auto;
 }
 .posts {
-	max-width: 650px;
+	max-width: 500px;
 }
 .post-height {
 	height: 250px;
@@ -42,11 +46,18 @@ body {
 .like-height {
 	height: 60px;
 }
-.reccs-width {
-  width: 200px;
+.reccs {
+  max-width: 300px;
 }
-
 .recommendations {
-
+	max-width: 9999px;
 }
+
+@media only screen and (max-width: 1024px) {
+	
+}
+	.recommendations {
+		max-width: 250px;
+	}
+
 

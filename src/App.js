@@ -28,37 +28,37 @@ function App() {
   
   return (
     <>
-			<section className="title-container">
-				<div className="title my-5 mx-20 xl:mx-48">
-          logo
-        </div>
+			<section className="title-container w-screen my-5 mx-5 xl:mx-10">
+				<div className="title h-10">
+          			logo
+        		</div>
 			</section>
 
-			<section className="flex flex-col lg:flex-row post-container h-100 px-20 mb-10 xl:px-48 w-screen">
-				<div className="hidden lg:mr-auto lg:flex lg:flex-column ads lg:ads-height lg:w-32 lg:mr-48 xl:w-72">
+			<section className="flex flex-col lg:flex-row post-container h-100 px-5 mb-10 xl:px-10 w-full lg:justify-between">
+				<div className="hidden lg:flex lg:flex-column ads lg:ads-height lg:w-48 xl:w-72">
 					ads/reccs
 				</div>
 
-				<div className="flex flex-col posts w-full self-center items-center lg:items-end">
+				<div className="flex flex-col posts w-full mx-auto">
 					<div className="post post-height w-full mb-5">
-            main screen
-          </div>
+            			main screen
+          			</div>
 					<div className="like like-height w-full mb-10">
 						main title
 					</div>
-				</div>
+				</div>	
 
-      <dir className="recommendations flex flex-row lg:flex-col flex-wrap lg:flex-nowrap justify-between px-20">
-        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+      <dir className="recommendations w-full p-0 flex flex-row lg:flex-col flex-wrap lg:flex-nowrap justify-between mx-auto lg:mx-0 lg:mr-10">
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-40 lg:h-24 bg-white mb-10">
           recommendation
         </div>  
-        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-40 lg:h-24 bg-white mb-10">
           recommendation
         </div>
-        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-40 lg:h-24 bg-white mb-10">
           recommendation
         </div>
-        <div className="reccs w-full sm:w-5/12 lg:w-full h-48 bg-white mb-10">
+        <div className="reccs w-full sm:w-5/12 lg:w-full h-40 lg:h-24 bg-white mb-10">
           recommendation
         </div>
       </dir>        
@@ -66,7 +66,7 @@ function App() {
     
         
        
-      </section>
+      		</section>
 		</>
   );
 }
