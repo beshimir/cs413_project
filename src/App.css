@@ -34,30 +34,12 @@ body {
 .ads-height {
 	height: auto;
 }
-.posts {
-	max-width: 500px;
-}
+
 .post-height {
 	height: 250px;
 }
-.post-width {
-	max-width: 400px;
-}
+
 .like-height {
 	height: 60px;
 }
-.reccs {
-  max-width: 300px;
-}
-.recommendations {
-	max-width: 9999px;
-}
-
-@media only screen and (max-width: 1024px) {
-	
-}
-	.recommendations {
-		max-width: 250px;
-	}
-
 
