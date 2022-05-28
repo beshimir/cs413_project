@@ -13,16 +13,16 @@ otherwise set to 0 when ready
 for styling or done debugging */
 
 * {
-	--debug: 0;
+	--debug: 1;
 	
 }
 
 
 
 .title,
-.post,
+.video,
 .ads,
-.like {
+.comment {
 	background-color: rgb(233, 239, 248);
 }
 
@@ -35,11 +35,11 @@ body {
 	height: auto;
 }
 
-.post-height {
+.video-height {
 	height: 250px;
 }
 
-.like-height {
+.comment-height {
 	height: 60px;
 }
 
