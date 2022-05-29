@@ -2,7 +2,7 @@
 
 const MainWrapper = (props) => {
   return (
-    <section className="mx-auto w-11/12">
+    <section className="flex flex-col lg:flex-row w-full">
       {props.children}
     </section>
   );

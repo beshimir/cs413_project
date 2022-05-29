@@ -36,10 +36,19 @@ body {
 }
 
 .video-height {
-	height: 250px;
+	height: 250px;	
 }
+
 
 .comment-height {
-	height: 60px;
+	height: 45px;
 }
 
+@media only screen and (min-width: 512px) {
+
+	
+.video-height {
+	height: 350px;	
+}
+	
+}
