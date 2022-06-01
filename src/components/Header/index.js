@@ -2,8 +2,8 @@
 
 const Header = () => {
     return (
-      <div className="title">
-        rops.children
+      <div className="w-full p-2">
+        Title!
       </div>
     );
   };

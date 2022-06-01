@@ -7,5 +7,5 @@ export const recToComponent = (rec) => {
 };
 
 export const commentToComponent = (comment) => {
-  return <Comment text={comment.text} />;
+  return <Comment prop={comment} />;
 };

@@ -1,9 +1,9 @@
 
 
-const MainWrapper = (props) => {
+const MainWrapper = ({children}) => {
   return (
-    <section className="flex flex-col lg:flex-row w-full">
-      {props.children}
+    <section className="text-slate-300 w-full md:w-11/12 flex flex-col lg:flex-row mx-auto ">
+      {children}
     </section>
   );
 };

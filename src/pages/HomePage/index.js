@@ -1,5 +1,7 @@
 //helpers
 import { useQueryUrl } from "../../lib/data";
+import { useHistory } from "react-router-dom";
+import { logout } from "../../services/auth";
 
 // components
 import Header from "../../components/Header";
@@ -8,6 +10,7 @@ import Comment from "../../components/Comment";
 import Recommendation from "../../components/Recommendation";
 import VideoScreen from "../../components/VideoScreen";
 import Toast from "../../components/Toast";
+import FormButton from "../../components/FormButton";
 
 // data
 import getData from "./data";
@@ -32,7 +35,7 @@ import LoadingComment from "../../components/LoadingComment";
 const HomePage = () => {
     //const data = getData();
     //const { recommendations, videoInfo, headerInfo } = data;
-  
+    const history = useHistory();
 
     const {
         data: recommendations,
@@ -59,7 +62,7 @@ const HomePage = () => {
         isError: isVideoInfoError,
     } = useQueryUrl({
         url: videoInfoUrl,
-        init: { word: "" },
+        init: { title: "" },
     });
     
     const anythingLoading = isRecLoading || isCommentsLoading || isVideoInfoLoading;
@@ -81,28 +84,29 @@ const HomePage = () => {
 
             <HeaderWrapper>
                 <Header />
+                <FormButton onClick={() => logout(history)} type="danger" />
             </HeaderWrapper>
         
         <MainWrapper>
            
 
             <Menu />
-
+           
             <VideoScreenWrapper>
-                {console.log(videoInfo.word)}
-                {console.log("videoInfo")}
-                {console.log("videoInfo")}
-                <VideoScreen    title={videoInfo.word}
+                <VideoScreen    title={videoInfo.title}
                                 isLoading={isVideoInfoLoading}/> 
                 <CommentWrapper>
                     {isCommentsLoading && <LoadingComment />}
+                    
+                    {!isCommentsLoading && comments.map(commentToComponent)}
 
                 </CommentWrapper>
             </VideoScreenWrapper>
            
             <RecommendationWrapper>
                 {!recommendations && <LoadingRecommendation />}
-
+               
+                {recommendations.map(recToComponent)}
             </RecommendationWrapper>
             
         </MainWrapper>

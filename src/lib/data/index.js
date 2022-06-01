@@ -14,13 +14,8 @@ export const useQuery = ({ fetcher, init = [] }) => {
     try {
       const data_ = await fetcher();
       console.log("[effect]", { data_ });
-      console.log("asdasddsa");
-      console.log("qqqqqqqqqqqq");
-      console.log(data_[0].word);
-      console.log("qqqqqqqqqqqq");
-      console.log("asdasddsa");
 
-      setData(data_[0]);
+      setData(data_);
     } catch (error) {
       console.log("[effect]", { error });
 

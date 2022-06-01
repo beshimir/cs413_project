@@ -21,14 +21,24 @@ for styling or done debugging */
 
 .title,
 .video,
-.ads,
-.comment {
-	background-color: rgb(233, 239, 248);
+.ads, .reccs{
+	background-color: rgb(30, 30, 30);
 }
 
 body {
-	background-color: rgb(31, 94, 189);
+	background-color: rgb(15, 15, 15);
+
 	
+}
+
+.reccs {
+	border-left: 5px solid rgb(100, 100, 100);
+	padding: 10px;
+}
+
+.comment {
+	background-color: rgb(30, 30, 30);
+	border-left: 5px solid rgb(100, 100, 100);
 }
 
 .ads-height {
@@ -43,7 +53,12 @@ body {
 .comment-height {
 	height: 45px;
 }
-
+.headerwrapper {
+	height: 50px;
+	background-color: rgb(30, 30, 30);
+	border-bottom: 5px solid rgb(100, 100, 100);
+	
+  }
 @media only screen and (min-width: 512px) {
 
 	
